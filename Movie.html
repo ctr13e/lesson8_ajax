@@ -1,8 +1,8 @@
 <html>
 <!- - 
 Program Name:   Seminole Movie Connection
-Author: 
-Date: 
+Author: Christian
+Date: 4/20/2016
 Filename:   Movie.html
 - ->
 <head>
@@ -39,6 +39,38 @@ Filename:   Movie.html
             <p class="list-group-item-text lead text-primary" id="Rated"> </p>
         </a>
         <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Director:</h3>
+            <p class="list-group-item-text lead text-primary" id="Director"> </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Writer:</h3>
+            <p class="list-group-item-text lead text-primary" id="Writer"> </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Genre:</h3>
+            <p class="list-group-item-text lead text-primary" id="Genre"> </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Runtime:</h3>
+            <p class="list-group-item-text lead text-primary" id="Runtime"> </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Language:</h3>
+            <p class="list-group-item-text lead text-primary" id="Language"> </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Country:</h3>
+            <p class="list-group-item-text lead text-primary" id="Country"> </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Awards:</h3>
+            <p class="list-group-item-text lead text-primary" id="Awards"> </p>
+        </a>
+        <a href="#" class="list-group-item">
+            <h3 class="list-group-item-heading">Metascore:</h3>
+            <p class="list-group-item-text lead text-primary" id="Metascore"> </p>
+        </a>
+        <a href="#" class="list-group-item">
             <h3 class="list-group-item-heading">Actors:</h3>
             <p class="list-group-item-text lead text-primary" id="Actors">  </p>
         </a>
@@ -67,6 +99,14 @@ Filename:   Movie.html
                 .done(function(json){
                      $('#Title').html(json.Title);
                      $('#Rated').html(json.Rated);
+                     $('#Director').html(json.Director);
+                     $('#Writer').html(json.Writer);
+                     $('#Genre').html(json.Genre);
+                     $('#Runtime').html(json.Runtime);
+                     $('#Language').html(json.Language);
+                     $('#Country').html(json.Country);
+                     $('#Awards').html(json.Awards);
+                     $('#Metascore').html(json.Metascore);
                      $('#Actors').html(json.Actors);
                      $('#Plot').html(json.Plot);
                      $('#Released').html(json.Released);
